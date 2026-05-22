@@ -62,6 +62,7 @@ jobs:
         env:
           # Workspace ID is required for uploading the plan status to Atmos Pro.
           ATMOS_PRO_WORKSPACE_ID: ${{ vars.ATMOS_PRO_WORKSPACE_ID }}
+          ATMOS_PRO_BASE_URL: ${{ vars.ATMOS_PRO_BASE_URL }}          
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ATMOS_PROFILE: github
           GITHUB_SHA: ${{ inputs.sha }}
